@@ -102,7 +102,7 @@ def train():
     # Initialize AD2Restormer Model
     model = AD2Restormer(dim=48, num_blocks=[2, 2, 2]).to(device)
 
-    epochs = 30
+    epochs = 60
 
     # Optimizer & Scheduler
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4, weight_decay=1e-4)
